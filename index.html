@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Okon | Cybersecurity & SysAdmin Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0a0f24;
+      color: #f1f1f1;
+    }
+    header {
+      background-color: #11172d;
+      padding: 3rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1.5s ease-out;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #9faac5;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #1e90ff;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+    .about {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .about img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #1e2a48;
+      animation: fadeInLeft 1s ease-in-out;
+    }
+    .projects {
+      background-color: #11172d;
+      padding: 3rem 1rem;
+    }
+    .project {
+      margin-bottom: 2rem;
+    }
+    .project h3 {
+      margin-bottom: 0.5rem;
+      color: #9ed0ff;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #0a0f24;
+      color: #555;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #1e90ff;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    a.button:hover {
+      background-color: #0d6efd;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about img {
+        margin-bottom: 1rem;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Samuel Okon</h1>
+    <p>System Administrator & Cybersecurity Analyst</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <img src="img.png" alt="Samuel Okon">
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I’m a detail-oriented IT professional with a degree in Information Technology and Computer Science from UMass Boston. I specialize in system administration, networking, and cybersecurity.
+        With experience configuring secure networks, deploying firewalls, managing servers, and scripting automation, I’m passionate about building reliable infrastructure and safeguarding systems.
+      </p>
+      <p>
+        I’m certified in CompTIA Security+ (06/2025), and I’ve completed capstone projects in web application development using Python, Flask, and SQL. My goal is to join a top-tier tech team that values precision, security, and innovation.
+      </p>
+      <a class="button" href="Samuel_Okon_Resume.pdf" target="_blank">Download My Resume</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <h3>Web Projects</h3>
+    <div class="project">
+      <h3>KG Construction Website</h3>
+      <p>Business website for a construction company, built with HTML, CSS, JavaScript, and hosted on Heroku.</p>
+      <p>
+        A clean, responsive website built for a small business owner launching a construction company. Designed to help establish an online presence and highlight core services. Built using HTML, CSS, JavaScript, and optionally Flask for backend. Deployed on Heroku.
+      </p>
+      <a class="button" href="https://www.kgconstruction-llc.com/" target="_blank">View Site</a>
+      <a class="button" href="https://github.com/yourusername/kgconstruction" target="_blank">GitHub Repo</a>
+    </div>
+    <div class="project">
+      <h3>Ubuntu Server Configuration</h3>
+      <p>Installed Ubuntu 18.04 on a virtual machine with MAC spoofing and secure routing. Hands-on setup for securing Linux-based infrastructure.</p>
+    </div>
+    <div class="project">
+      <h3>Distributed File System using NFS</h3>
+      <p>Implemented DFS in a Linux environment to support user authentication and efficient file distribution using the NFS protocol.</p>
+    </div>
+    <div class="project">
+      <h3>Staywell Database System</h3>
+      <p>Designed and built a relational database from scratch using SQL. Covered DBMS architecture, data modeling, and advanced queries.</p>
+    </div>
+    <div class="project">
+      <h3>Capstone Web Application</h3>
+      <p>Developed a full-stack web app using Python (Flask) and HTML/CSS. Focused on back-end functionality and front-end usability.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Systems & Tools:</strong> Linux, Windows Server, Active Directory, DHCP, VMware</li>
+      <li><strong>Security:</strong> Firewalls, Wireshark, Nmap, Nessus, Metasploit, Access Control</li>
+      <li><strong>Languages & Frameworks:</strong> Python, Bash, PowerShell, SQL, Flask, HTML/CSS</li>
+      <li><strong>Software:</strong> MS Project, Tableau, GitHub, Amadeus, JIRA</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: okonsamuel1998@gmail.com</p>
+    <p>Phone: (617) 905-1356</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/samuel-okon-73aba0225">Add Your LinkedIn Link</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Samuel Okon. All rights reserved.
+  </footer>
+</body>
+</html>
